@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using flex with flex item</h2>
+    <p>This property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. It will accept which prop comes first</p>
+    <div class="flex-container">
+        <h3>Without flex</h3>
+        <div class="flex-item-flex">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+        <h3>Using flex</h3>
+        <div class="flex-item-flex">
+            <div>One</div>
+            <div style="flex:1 1 auto">Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div style="flex: 1 2 50px">Five</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

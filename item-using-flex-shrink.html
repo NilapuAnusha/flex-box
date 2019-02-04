@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using flex-shrink with flex item (It will accept natural number.By default it will have value 0. Item can't shrink beyond the text size. We cant apply it when we are using flex wrap as wrap or wrap reverse to flex container)</h2>
+    <p>This property specifies how much a flex item will shrink relative to the rest of the flex items.</p>
+    <div class="flex-container">
+        <h3>Without shrink</h3>
+        <div class="flex-item-no-shrink">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+        <h3>Using shrink</h3>
+        <div class="flex-item-shrink">
+            <div style="background-color: red">One</div>
+            <div style="background-color: deepskyblue;">Two</div>
+            <div style="background-color: blueviolet;">Three</div>
+            <div style="background-color: antiquewhite;">Four</div>
+            <div style="background-color: darkorange">Five</div>
+        </div>
+        <h3>Using shrink</h3>
+        <div class="flex-item-shrink">
+            <div style="background-color: red">One</div>
+            <div style="background-color: deepskyblue;flex-shrink: 0">Two</div>
+            <div style="background-color: blueviolet;">Three</div>
+            <div style="background-color: antiquewhite;flex-shrink: 2">ThisIsFourBlock</div>
+            <div style="background-color: darkorange">Five</div>
+        </div>
+        <h3>Using shrink</h3>
+        <div class="flex-item-shrink">
+            <div>One</div>
+            <div style="flex-shrink: 0">Two</div>
+            <div>Three</div>
+            <div style="flex-shrink: 2">fourISfour</div>
+            <div>Five</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

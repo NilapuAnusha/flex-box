@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using flex-basis with flex item (It will accept width of item.)</h2>
+    <p>This property specifies the initial length of a flex item.</p>
+    <div class="flex-container">
+        <h3>Without basis</h3>
+        <div class="flex-item-basis">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>basis</div>
+        </div>
+        <h3>Using grow</h3>
+        <div class="flex-item-basis">
+            <div>One</div>
+            <div style="flex-basis: 500px">Two</div>
+            <div>Three</div>
+            <div style="flex-basis: 50px">Four</div>
+            <div>Five</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

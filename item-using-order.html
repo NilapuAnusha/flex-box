@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using align-self with flex item (It will accept whole number)</h2>
+    <p>This property can change the order of the flex items according to given number</p>
+    <div class="flex-container">
+        <h3>Without order</h3>
+        <div class="flex-item-order">
+            <img src="img/image1.jpg"/>
+            <img src="img/image2.jpg"/>
+            <img src="img/image3.jpg"/>
+            <img src="img/image4.jpg"/>
+            <img src="img/image5.jpg"/>
+        </div>
+        <h3>Using order(3 1 5 2 4)</h3>
+        <div class="flex-item-order">
+            <img src="img/image1.jpg" style="order: 3"/>
+            <img src="img/image2.jpg" style="order: 1"/>
+            <img src="img/image3.jpg" style="order: 5"/>
+            <img src="img/image4.jpg" style="order: 2"/>
+            <img src="img/image5.jpg" style="order: 4"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

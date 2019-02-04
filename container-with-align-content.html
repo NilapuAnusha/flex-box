@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using align-content with flex (Deals with cross-axis. It wont change order. This prop is useful for multiple rows but container shuld have height prop too)</h2>
+    <p>This property is used to align the flex lines.</p>
+    <div class="flex-container">
+        <h3>Using flex start</h3>
+        <div class="flex-container-align-content-start">
+            <img src="img/image1.jpg"/>
+            <img src="img/image2.jpg"/>
+            <img src="img/image3.jpg"/>
+            <img src="img/image4.jpg"/>
+            <img src="img/image5.jpg"/>
+        </div>
+        <h3>Using flex end</h3>
+        <div class="flex-container-align-content-end">
+            <img src="img/image1.jpg"/>
+            <img src="img/image2.jpg"/>
+            <img src="img/image3.jpg"/>
+            <img src="img/image4.jpg"/>
+            <img src="img/image5.jpg"/>
+        </div>
+        <h3>Using center</h3>
+        <div class="flex-container-align-content-center">
+            <img src="img/image6.jpg"/>
+            <img src="img/image7.jpg"/>
+            <img src="img/image8.jpg"/>
+            <img src="img/image9.jpg"/>
+            <img src="img/image10.jpg"/>
+        </div>
+        <h3>Using stretch</h3>
+        <div class="flex-container-align-content-stretch">
+            <div class="box">One</div>
+            <div class="box">Two</div>
+            <div class="box">Three
+                <br>has
+                <br>extra
+                <br>text
+            </div>
+        </div>
+        <h3>Using baseline (will apply to text)</h3>
+        <div class="flex-container-align-content-baseline">
+            <div class="box" style="padding: 10px;">First Item</div>
+            <div class="box">Second, this is large paragraph. This is another paragraph</div>
+            <div class="box" style="padding: 30px;">Third</div>
+            <div class="box"  style="padding: 15px;">Fourth, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit fugit tenetur!</div>
+            <div class="box">Fifth</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using align-self with flex item</h2>
+    <p>This property specifies the alignment for the selected item inside the flexible container and overrides the
+        default alignment set by the container's align-items property.</p>
+    <h3>Without align-self</h3>
+    <div class="flex-item-align-self">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+    <h3>Using align-self as center</h3>
+    <div class="flex-item-align-self">
+        <div>One</div>
+        <div>Two</div>
+        <div style="align-self: center">Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+    <h3>Using align-self as flex-start</h3>
+    <div class="flex-item-align-self-start">
+        <div>One</div>
+        <div>Two</div>
+        <div style="align-self: flex-start">Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+    <h3>Using align-self as flex-end</h3>
+    <div class="flex-item-align-self-end">
+        <div>One</div>
+        <div>Two</div>
+        <div style="align-self: flex-end">Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

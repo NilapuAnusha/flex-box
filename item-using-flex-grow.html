@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="main-container">
+    <button>
+        <a href="/">Back</a>
+    </button>
+    <h2>Using flex-grow with flex item (It will accept natural number.By default it will have value 0. It will be applied when positive field is available)</h2>
+    <p>This property specifies how much a flex item will grow relative to the rest of the flex items.</p>
+    <div class="flex-container">
+        <h3>Without grow</h3>
+        <div class="flex-item-grow">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+        <h3>Using grow</h3>
+        <div class="flex-item-grow">
+            <div>One</div>
+            <div style="flex-grow:1">Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
